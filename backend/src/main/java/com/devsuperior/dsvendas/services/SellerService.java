@@ -14,7 +14,7 @@ import com.devsuperior.dsvendas.repositories.SellerRepository;
 public class SellerService {
 	
 	@Autowired
-	public SellerRepository repository;
+	private SellerRepository repository;
 	
 	public List<SellerDTO> findAll() {
 		List<Seller> result = repository.findAll();
